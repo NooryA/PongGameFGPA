@@ -1,0 +1,6 @@
+module VGAController(vga_clk, hs_out, vs_out, vga_r, vga_g, vga_r);
+
+
+
+
+endmodule
