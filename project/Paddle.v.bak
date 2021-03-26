@@ -1,0 +1,7 @@
+module Paddle(clk, pb0, pb1, intersect);
+
+
+
+
+
+endmodule

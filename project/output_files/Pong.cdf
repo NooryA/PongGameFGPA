@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484ES) Path("C:/Users/Vinny/Desktop/eecs3216/project/output_files/") File("Pong.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484ES) Path("C:/Users/Vinny/Desktop/eecs3216/final_project/project/output_files/") File("Pong.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

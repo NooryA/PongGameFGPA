@@ -1,7 +1,7 @@
-module Pong(clk, hs_out, vs_out, vga_r, vga_g, vga_b);
+module Pong(clk, pb, hs_out, vs_out, vga_r, vga_g, vga_b);
 
 input clk; //50Mhz
-
+input [1:0] pb;
 output hs_out, vs_out;
 output [3:0] vga_r, vga_g, vga_b;
 wire vga_clk;
