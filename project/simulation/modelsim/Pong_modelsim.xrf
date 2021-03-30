@@ -1,17 +1,30 @@
 vendor_name = ModelSim
+<<<<<<< HEAD
 source_file = 1, C:/Users/Vinny/Desktop/eecs3216/final_project/project/VHSYNC.v
 source_file = 1, C:/Users/Vinny/Desktop/eecs3216/final_project/project/vga_pll.v
 source_file = 1, C:/Users/Vinny/Desktop/eecs3216/final_project/project/Pong.v
 source_file = 1, C:/Users/Vinny/Desktop/eecs3216/final_project/project/output_files/VGAController.v
 source_file = 1, C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v
 source_file = 1, C:/Users/Vinny/Desktop/eecs3216/final_project/project/Paddle.v
+=======
+source_file = 1, C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/VHSYNC.v
+source_file = 1, C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/vga_pll.v
+source_file = 1, C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/Pong.v
+source_file = 1, C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/output_files/VGAController.v
+source_file = 1, C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/Ball.v
+source_file = 1, C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/Paddle.v
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cbx.lst
+<<<<<<< HEAD
 source_file = 1, C:/Users/Vinny/Desktop/eecs3216/final_project/project/db/vga_pll_altpll.v
+=======
+source_file = 1, C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/db/vga_pll_altpll.v
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 design_name = Pong
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Pong, 1
 instance = comp, \hs_out~output , hs_out~output, Pong, 1
@@ -33,6 +46,7 @@ instance = comp, \clk~input , clk~input, Pong, 1
 instance = comp, \u1|altpll_component|auto_generated|pll1 , u1|altpll_component|auto_generated|pll1, Pong, 1
 instance = comp, \u1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl , u1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl, Pong, 1
 instance = comp, \comb_3|vh1|Add0~0 , comb_3|vh1|Add0~0, Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|vh1|Add0~8 , comb_3|vh1|Add0~8, Pong, 1
 instance = comp, \comb_3|vh1|Add0~10 , comb_3|vh1|Add0~10, Pong, 1
 instance = comp, \comb_3|vh1|hsp~3 , comb_3|vh1|hsp~3, Pong, 1
@@ -48,6 +62,13 @@ instance = comp, \comb_3|vh1|Equal0~1 , comb_3|vh1|Equal0~1, Pong, 1
 instance = comp, \comb_3|vh1|Add0~18 , comb_3|vh1|Add0~18, Pong, 1
 instance = comp, \comb_3|vh1|hsp~1 , comb_3|vh1|hsp~1, Pong, 1
 instance = comp, \comb_3|vh1|hsp[9] , comb_3|vh1|hsp[9], Pong, 1
+=======
+instance = comp, \comb_3|vh1|Add0~16 , comb_3|vh1|Add0~16, Pong, 1
+instance = comp, \comb_3|vh1|Add0~18 , comb_3|vh1|Add0~18, Pong, 1
+instance = comp, \comb_3|vh1|hsp~1 , comb_3|vh1|hsp~1, Pong, 1
+instance = comp, \comb_3|vh1|hsp[9] , comb_3|vh1|hsp[9], Pong, 1
+instance = comp, \comb_3|vh1|Equal0~1 , comb_3|vh1|Equal0~1, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|vh1|Equal0~0 , comb_3|vh1|Equal0~0, Pong, 1
 instance = comp, \comb_3|vh1|Equal0~2 , comb_3|vh1|Equal0~2, Pong, 1
 instance = comp, \comb_3|vh1|hsp~2 , comb_3|vh1|hsp~2, Pong, 1
@@ -58,19 +79,41 @@ instance = comp, \comb_3|vh1|Add0~4 , comb_3|vh1|Add0~4, Pong, 1
 instance = comp, \comb_3|vh1|hsp[2] , comb_3|vh1|hsp[2], Pong, 1
 instance = comp, \comb_3|vh1|Add0~6 , comb_3|vh1|Add0~6, Pong, 1
 instance = comp, \comb_3|vh1|hsp[3] , comb_3|vh1|hsp[3], Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|vh1|hsp[4] , comb_3|vh1|hsp[4], Pong, 1
+=======
+instance = comp, \comb_3|vh1|Add0~8 , comb_3|vh1|Add0~8, Pong, 1
+instance = comp, \comb_3|vh1|hsp[4] , comb_3|vh1|hsp[4], Pong, 1
+instance = comp, \comb_3|vh1|Add0~10 , comb_3|vh1|Add0~10, Pong, 1
+instance = comp, \comb_3|vh1|hsp~3 , comb_3|vh1|hsp~3, Pong, 1
+instance = comp, \comb_3|vh1|hsp[5] , comb_3|vh1|hsp[5], Pong, 1
+instance = comp, \comb_3|vh1|Add0~12 , comb_3|vh1|Add0~12, Pong, 1
+instance = comp, \comb_3|vh1|hsp[6] , comb_3|vh1|hsp[6], Pong, 1
+instance = comp, \comb_3|vh1|Add0~14 , comb_3|vh1|Add0~14, Pong, 1
+instance = comp, \comb_3|vh1|hsp[7] , comb_3|vh1|hsp[7], Pong, 1
+instance = comp, \comb_3|vh1|hsp~0 , comb_3|vh1|hsp~0, Pong, 1
+instance = comp, \comb_3|vh1|hsp[8] , comb_3|vh1|hsp[8], Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|vh1|vga_H~0 , comb_3|vh1|vga_H~0, Pong, 1
 instance = comp, \comb_3|vh1|vga_H~1 , comb_3|vh1|vga_H~1, Pong, 1
 instance = comp, \comb_3|vh1|vga_H , comb_3|vh1|vga_H, Pong, 1
 instance = comp, \comb_3|vh1|Add1~0 , comb_3|vh1|Add1~0, Pong, 1
 instance = comp, \comb_3|vh1|vsp[0] , comb_3|vh1|vsp[0], Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|vh1|Add1~8 , comb_3|vh1|Add1~8, Pong, 1
+=======
+instance = comp, \comb_3|vh1|Add1~2 , comb_3|vh1|Add1~2, Pong, 1
+instance = comp, \comb_3|vh1|Add1~6 , comb_3|vh1|Add1~6, Pong, 1
+instance = comp, \comb_3|vh1|Add1~8 , comb_3|vh1|Add1~8, Pong, 1
+instance = comp, \comb_3|vh1|vsp[4] , comb_3|vh1|vsp[4], Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|vh1|Add1~10 , comb_3|vh1|Add1~10, Pong, 1
 instance = comp, \comb_3|vh1|vsp[5] , comb_3|vh1|vsp[5], Pong, 1
 instance = comp, \comb_3|vh1|Add1~12 , comb_3|vh1|Add1~12, Pong, 1
 instance = comp, \comb_3|vh1|vsp[6] , comb_3|vh1|vsp[6], Pong, 1
 instance = comp, \comb_3|vh1|Add1~14 , comb_3|vh1|Add1~14, Pong, 1
 instance = comp, \comb_3|vh1|vsp[7] , comb_3|vh1|vsp[7], Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|vh1|Add1~2 , comb_3|vh1|Add1~2, Pong, 1
 instance = comp, \comb_3|vh1|vsp~2 , comb_3|vh1|vsp~2, Pong, 1
 instance = comp, \comb_3|vh1|vsp[1] , comb_3|vh1|vsp[1], Pong, 1
@@ -89,11 +132,31 @@ instance = comp, \comb_3|vh1|Add1~6 , comb_3|vh1|Add1~6, Pong, 1
 instance = comp, \comb_3|vh1|vsp~3 , comb_3|vh1|vsp~3, Pong, 1
 instance = comp, \comb_3|vh1|vsp[3] , comb_3|vh1|vsp[3], Pong, 1
 instance = comp, \comb_3|vh1|vsp[4] , comb_3|vh1|vsp[4], Pong, 1
+=======
+instance = comp, \comb_3|vh1|Add1~16 , comb_3|vh1|Add1~16, Pong, 1
+instance = comp, \comb_3|vh1|vsp[8] , comb_3|vh1|vsp[8], Pong, 1
+instance = comp, \comb_3|vh1|Equal1~0 , comb_3|vh1|Equal1~0, Pong, 1
+instance = comp, \comb_3|vh1|Equal1~1 , comb_3|vh1|Equal1~1, Pong, 1
+instance = comp, \comb_3|vh1|Add1~18 , comb_3|vh1|Add1~18, Pong, 1
+instance = comp, \comb_3|vh1|vsp~3 , comb_3|vh1|vsp~3, Pong, 1
+instance = comp, \comb_3|vh1|vsp[9] , comb_3|vh1|vsp[9], Pong, 1
+instance = comp, \comb_3|vh1|Equal1~2 , comb_3|vh1|Equal1~2, Pong, 1
+instance = comp, \comb_3|vh1|vsp~0 , comb_3|vh1|vsp~0, Pong, 1
+instance = comp, \comb_3|vh1|vsp[1] , comb_3|vh1|vsp[1], Pong, 1
+instance = comp, \comb_3|vh1|Add1~4 , comb_3|vh1|Add1~4, Pong, 1
+instance = comp, \comb_3|vh1|vsp~2 , comb_3|vh1|vsp~2, Pong, 1
+instance = comp, \comb_3|vh1|vsp[2] , comb_3|vh1|vsp[2], Pong, 1
+instance = comp, \comb_3|vh1|vsp~1 , comb_3|vh1|vsp~1, Pong, 1
+instance = comp, \comb_3|vh1|vsp[3] , comb_3|vh1|vsp[3], Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|vh1|vga_V~0 , comb_3|vh1|vga_V~0, Pong, 1
 instance = comp, \comb_3|vh1|vga_V~1 , comb_3|vh1|vga_V~1, Pong, 1
 instance = comp, \comb_3|vh1|vga_V~2 , comb_3|vh1|vga_V~2, Pong, 1
 instance = comp, \comb_3|vh1|vga_V , comb_3|vh1|vga_V, Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|b1|y[0]~0 , comb_3|b1|y[0]~0, Pong, 1
+=======
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|b1|counter[0]~25 , comb_3|b1|counter[0]~25, Pong, 1
 instance = comp, \comb_3|b1|counter[0] , comb_3|b1|counter[0], Pong, 1
 instance = comp, \comb_3|b1|counter[1]~27 , comb_3|b1|counter[1]~27, Pong, 1
@@ -104,6 +167,10 @@ instance = comp, \comb_3|b1|counter[3]~31 , comb_3|b1|counter[3]~31, Pong, 1
 instance = comp, \comb_3|b1|counter[3] , comb_3|b1|counter[3], Pong, 1
 instance = comp, \comb_3|b1|counter[4]~33 , comb_3|b1|counter[4]~33, Pong, 1
 instance = comp, \comb_3|b1|counter[4] , comb_3|b1|counter[4], Pong, 1
+<<<<<<< HEAD
+=======
+instance = comp, \comb_3|b1|LessThan0~6 , comb_3|b1|LessThan0~6, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|b1|counter[5]~35 , comb_3|b1|counter[5]~35, Pong, 1
 instance = comp, \comb_3|b1|counter[5] , comb_3|b1|counter[5], Pong, 1
 instance = comp, \comb_3|b1|counter[6]~37 , comb_3|b1|counter[6]~37, Pong, 1
@@ -124,8 +191,14 @@ instance = comp, \comb_3|b1|counter[13]~51 , comb_3|b1|counter[13]~51, Pong, 1
 instance = comp, \comb_3|b1|counter[13] , comb_3|b1|counter[13], Pong, 1
 instance = comp, \comb_3|b1|counter[14]~53 , comb_3|b1|counter[14]~53, Pong, 1
 instance = comp, \comb_3|b1|counter[14] , comb_3|b1|counter[14], Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|b1|LessThan0~8 , comb_3|b1|LessThan0~8, Pong, 1
 instance = comp, \comb_3|b1|LessThan0~9 , comb_3|b1|LessThan0~9, Pong, 1
+=======
+instance = comp, \comb_3|b1|LessThan0~2 , comb_3|b1|LessThan0~2, Pong, 1
+instance = comp, \comb_3|b1|LessThan0~5 , comb_3|b1|LessThan0~5, Pong, 1
+instance = comp, \comb_3|b1|LessThan0~7 , comb_3|b1|LessThan0~7, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|b1|counter[15]~55 , comb_3|b1|counter[15]~55, Pong, 1
 instance = comp, \comb_3|b1|counter[15] , comb_3|b1|counter[15], Pong, 1
 instance = comp, \comb_3|b1|counter[16]~57 , comb_3|b1|counter[16]~57, Pong, 1
@@ -140,7 +213,10 @@ instance = comp, \comb_3|b1|counter[20]~65 , comb_3|b1|counter[20]~65, Pong, 1
 instance = comp, \comb_3|b1|counter[20] , comb_3|b1|counter[20], Pong, 1
 instance = comp, \comb_3|b1|counter[21]~67 , comb_3|b1|counter[21]~67, Pong, 1
 instance = comp, \comb_3|b1|counter[21] , comb_3|b1|counter[21], Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|b1|LessThan0~0 , comb_3|b1|LessThan0~0, Pong, 1
+=======
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|b1|counter[22]~69 , comb_3|b1|counter[22]~69, Pong, 1
 instance = comp, \comb_3|b1|counter[22] , comb_3|b1|counter[22], Pong, 1
 instance = comp, \comb_3|b1|counter[23]~71 , comb_3|b1|counter[23]~71, Pong, 1
@@ -148,6 +224,7 @@ instance = comp, \comb_3|b1|counter[23] , comb_3|b1|counter[23], Pong, 1
 instance = comp, \comb_3|b1|counter[24]~73 , comb_3|b1|counter[24]~73, Pong, 1
 instance = comp, \comb_3|b1|counter[24] , comb_3|b1|counter[24], Pong, 1
 instance = comp, \comb_3|b1|LessThan0~1 , comb_3|b1|LessThan0~1, Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|b1|LessThan0~2 , comb_3|b1|LessThan0~2, Pong, 1
 instance = comp, \comb_3|b1|LessThan0~3 , comb_3|b1|LessThan0~3, Pong, 1
 instance = comp, \comb_3|b1|LessThan0~4 , comb_3|b1|LessThan0~4, Pong, 1
@@ -177,6 +254,90 @@ instance = comp, \comb_3|b1|y[7] , comb_3|b1|y[7], Pong, 1
 instance = comp, \comb_3|b1|Add2~14 , comb_3|b1|Add2~14, Pong, 1
 instance = comp, \comb_3|b1|y[8] , comb_3|b1|y[8], Pong, 1
 instance = comp, \comb_3|b1|Add2~16 , comb_3|b1|Add2~16, Pong, 1
+=======
+instance = comp, \comb_3|b1|LessThan0~0 , comb_3|b1|LessThan0~0, Pong, 1
+instance = comp, \comb_3|b1|LessThan0~3 , comb_3|b1|LessThan0~3, Pong, 1
+instance = comp, \comb_3|b1|LessThan0~4 , comb_3|b1|LessThan0~4, Pong, 1
+instance = comp, \comb_3|b1|LessThan0~8 , comb_3|b1|LessThan0~8, Pong, 1
+instance = comp, \comb_3|b1|Add1~0 , comb_3|b1|Add1~0, Pong, 1
+instance = comp, \comb_3|b1|x[0] , comb_3|b1|x[0], Pong, 1
+instance = comp, \comb_3|b1|Add1~2 , comb_3|b1|Add1~2, Pong, 1
+instance = comp, \comb_3|b1|x[1] , comb_3|b1|x[1], Pong, 1
+instance = comp, \comb_3|b1|Add1~4 , comb_3|b1|Add1~4, Pong, 1
+instance = comp, \comb_3|b1|x[2] , comb_3|b1|x[2], Pong, 1
+instance = comp, \comb_3|b1|Add1~6 , comb_3|b1|Add1~6, Pong, 1
+instance = comp, \comb_3|b1|x[3] , comb_3|b1|x[3], Pong, 1
+instance = comp, \comb_3|b1|Add1~8 , comb_3|b1|Add1~8, Pong, 1
+instance = comp, \comb_3|b1|x[4] , comb_3|b1|x[4], Pong, 1
+instance = comp, \comb_3|b1|Add1~10 , comb_3|b1|Add1~10, Pong, 1
+instance = comp, \comb_3|b1|x[5] , comb_3|b1|x[5], Pong, 1
+instance = comp, \comb_3|b1|Add1~12 , comb_3|b1|Add1~12, Pong, 1
+instance = comp, \comb_3|b1|x[6]~1 , comb_3|b1|x[6]~1, Pong, 1
+instance = comp, \comb_3|b1|x[6] , comb_3|b1|x[6], Pong, 1
+instance = comp, \comb_3|b1|Add1~14 , comb_3|b1|Add1~14, Pong, 1
+instance = comp, \comb_3|b1|x[7] , comb_3|b1|x[7], Pong, 1
+instance = comp, \comb_3|b1|Add1~16 , comb_3|b1|Add1~16, Pong, 1
+instance = comp, \comb_3|b1|x[8]~0 , comb_3|b1|x[8]~0, Pong, 1
+instance = comp, \comb_3|b1|x[8] , comb_3|b1|x[8], Pong, 1
+instance = comp, \comb_3|b1|speedX[0]~3 , comb_3|b1|speedX[0]~3, Pong, 1
+instance = comp, \comb_3|b1|speedX[0]~4 , comb_3|b1|speedX[0]~4, Pong, 1
+instance = comp, \comb_3|b1|speedX[0]~5 , comb_3|b1|speedX[0]~5, Pong, 1
+instance = comp, \comb_3|b1|speedX[0]~1 , comb_3|b1|speedX[0]~1, Pong, 1
+instance = comp, \comb_3|b1|speedX[1]~0 , comb_3|b1|speedX[1]~0, Pong, 1
+instance = comp, \comb_3|b1|speedX[1]~2 , comb_3|b1|speedX[1]~2, Pong, 1
+instance = comp, \comb_3|b1|speedX[1]~6 , comb_3|b1|speedX[1]~6, Pong, 1
+instance = comp, \comb_3|b1|speedX[1] , comb_3|b1|speedX[1], Pong, 1
+instance = comp, \comb_3|b1|Add1~18 , comb_3|b1|Add1~18, Pong, 1
+instance = comp, \comb_3|b1|x[9] , comb_3|b1|x[9], Pong, 1
+instance = comp, \comb_3|b1|Add3~0 , comb_3|b1|Add3~0, Pong, 1
+instance = comp, \comb_3|b1|Add3~2 , comb_3|b1|Add3~2, Pong, 1
+instance = comp, \comb_3|b1|Add3~4 , comb_3|b1|Add3~4, Pong, 1
+instance = comp, \comb_3|b1|Add3~6 , comb_3|b1|Add3~6, Pong, 1
+instance = comp, \comb_3|b1|Add3~8 , comb_3|b1|Add3~8, Pong, 1
+instance = comp, \comb_3|b1|Add3~10 , comb_3|b1|Add3~10, Pong, 1
+instance = comp, \comb_3|b1|Add3~12 , comb_3|b1|Add3~12, Pong, 1
+instance = comp, \comb_3|b1|Add3~14 , comb_3|b1|Add3~14, Pong, 1
+instance = comp, \comb_3|b1|Add3~16 , comb_3|b1|Add3~16, Pong, 1
+instance = comp, \comb_3|b1|Add3~18 , comb_3|b1|Add3~18, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~1 , comb_3|b1|LessThan5~1, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~3 , comb_3|b1|LessThan5~3, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~5 , comb_3|b1|LessThan5~5, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~7 , comb_3|b1|LessThan5~7, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~9 , comb_3|b1|LessThan5~9, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~11 , comb_3|b1|LessThan5~11, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~13 , comb_3|b1|LessThan5~13, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~15 , comb_3|b1|LessThan5~15, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~17 , comb_3|b1|LessThan5~17, Pong, 1
+instance = comp, \comb_3|b1|LessThan5~18 , comb_3|b1|LessThan5~18, Pong, 1
+instance = comp, \comb_3|b1|Add2~1 , comb_3|b1|Add2~1, Pong, 1
+instance = comp, \comb_3|b1|Add2~2 , comb_3|b1|Add2~2, Pong, 1
+instance = comp, \comb_3|b1|y[1] , comb_3|b1|y[1], Pong, 1
+instance = comp, \comb_3|b1|Add2~4 , comb_3|b1|Add2~4, Pong, 1
+instance = comp, \comb_3|b1|y[2] , comb_3|b1|y[2], Pong, 1
+instance = comp, \comb_3|b1|Add2~6 , comb_3|b1|Add2~6, Pong, 1
+instance = comp, \comb_3|b1|y[3] , comb_3|b1|y[3], Pong, 1
+instance = comp, \comb_3|b1|speedY[1]~0 , comb_3|b1|speedY[1]~0, Pong, 1
+instance = comp, \comb_3|b1|Add2~8 , comb_3|b1|Add2~8, Pong, 1
+instance = comp, \comb_3|b1|y[4]~3 , comb_3|b1|y[4]~3, Pong, 1
+instance = comp, \comb_3|b1|y[4] , comb_3|b1|y[4], Pong, 1
+instance = comp, \comb_3|b1|Add2~10 , comb_3|b1|Add2~10, Pong, 1
+instance = comp, \comb_3|b1|y[5]~2 , comb_3|b1|y[5]~2, Pong, 1
+instance = comp, \comb_3|b1|y[5] , comb_3|b1|y[5], Pong, 1
+instance = comp, \comb_3|b1|Add2~12 , comb_3|b1|Add2~12, Pong, 1
+instance = comp, \comb_3|b1|y[6]~1 , comb_3|b1|y[6]~1, Pong, 1
+instance = comp, \comb_3|b1|y[6] , comb_3|b1|y[6], Pong, 1
+instance = comp, \comb_3|b1|Add2~14 , comb_3|b1|Add2~14, Pong, 1
+instance = comp, \comb_3|b1|y[7]~0 , comb_3|b1|y[7]~0, Pong, 1
+instance = comp, \comb_3|b1|y[7] , comb_3|b1|y[7], Pong, 1
+instance = comp, \comb_3|b1|speedY[1]~2 , comb_3|b1|speedY[1]~2, Pong, 1
+instance = comp, \comb_3|b1|Add2~16 , comb_3|b1|Add2~16, Pong, 1
+instance = comp, \comb_3|b1|y[8] , comb_3|b1|y[8], Pong, 1
+instance = comp, \comb_3|b1|speedY[1]~1 , comb_3|b1|speedY[1]~1, Pong, 1
+instance = comp, \comb_3|b1|speedY[1]~3 , comb_3|b1|speedY[1]~3, Pong, 1
+instance = comp, \comb_3|b1|speedY[1]~4 , comb_3|b1|speedY[1]~4, Pong, 1
+instance = comp, \comb_3|b1|speedY[1] , comb_3|b1|speedY[1], Pong, 1
+instance = comp, \comb_3|b1|Add2~18 , comb_3|b1|Add2~18, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|b1|y[9] , comb_3|b1|y[9], Pong, 1
 instance = comp, \comb_3|b1|Add6~0 , comb_3|b1|Add6~0, Pong, 1
 instance = comp, \comb_3|b1|Add6~2 , comb_3|b1|Add6~2, Pong, 1
@@ -187,6 +348,7 @@ instance = comp, \comb_3|b1|Add6~10 , comb_3|b1|Add6~10, Pong, 1
 instance = comp, \comb_3|b1|Add6~12 , comb_3|b1|Add6~12, Pong, 1
 instance = comp, \comb_3|b1|Add6~14 , comb_3|b1|Add6~14, Pong, 1
 instance = comp, \comb_3|b1|Add6~16 , comb_3|b1|Add6~16, Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|b1|LessThan4~1 , comb_3|b1|LessThan4~1, Pong, 1
 instance = comp, \comb_3|b1|LessThan4~3 , comb_3|b1|LessThan4~3, Pong, 1
 instance = comp, \comb_3|b1|LessThan4~5 , comb_3|b1|LessThan4~5, Pong, 1
@@ -197,6 +359,37 @@ instance = comp, \comb_3|b1|LessThan4~13 , comb_3|b1|LessThan4~13, Pong, 1
 instance = comp, \comb_3|b1|LessThan4~15 , comb_3|b1|LessThan4~15, Pong, 1
 instance = comp, \comb_3|b1|LessThan4~17 , comb_3|b1|LessThan4~17, Pong, 1
 instance = comp, \comb_3|b1|LessThan4~18 , comb_3|b1|LessThan4~18, Pong, 1
+=======
+instance = comp, \comb_3|b1|LessThan8~1 , comb_3|b1|LessThan8~1, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~3 , comb_3|b1|LessThan8~3, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~5 , comb_3|b1|LessThan8~5, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~7 , comb_3|b1|LessThan8~7, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~9 , comb_3|b1|LessThan8~9, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~11 , comb_3|b1|LessThan8~11, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~13 , comb_3|b1|LessThan8~13, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~15 , comb_3|b1|LessThan8~15, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~17 , comb_3|b1|LessThan8~17, Pong, 1
+instance = comp, \comb_3|b1|LessThan8~18 , comb_3|b1|LessThan8~18, Pong, 1
+instance = comp, \comb_3|b1|Add4~0 , comb_3|b1|Add4~0, Pong, 1
+instance = comp, \comb_3|b1|Add4~2 , comb_3|b1|Add4~2, Pong, 1
+instance = comp, \comb_3|b1|Add4~4 , comb_3|b1|Add4~4, Pong, 1
+instance = comp, \comb_3|b1|Add4~6 , comb_3|b1|Add4~6, Pong, 1
+instance = comp, \comb_3|b1|Add4~8 , comb_3|b1|Add4~8, Pong, 1
+instance = comp, \comb_3|b1|Add4~10 , comb_3|b1|Add4~10, Pong, 1
+instance = comp, \comb_3|b1|Add4~12 , comb_3|b1|Add4~12, Pong, 1
+instance = comp, \comb_3|b1|Add4~14 , comb_3|b1|Add4~14, Pong, 1
+instance = comp, \comb_3|b1|Add4~16 , comb_3|b1|Add4~16, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~1 , comb_3|b1|LessThan6~1, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~3 , comb_3|b1|LessThan6~3, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~5 , comb_3|b1|LessThan6~5, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~7 , comb_3|b1|LessThan6~7, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~9 , comb_3|b1|LessThan6~9, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~11 , comb_3|b1|LessThan6~11, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~13 , comb_3|b1|LessThan6~13, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~15 , comb_3|b1|LessThan6~15, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~17 , comb_3|b1|LessThan6~17, Pong, 1
+instance = comp, \comb_3|b1|LessThan6~18 , comb_3|b1|LessThan6~18, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|b1|Add5~0 , comb_3|b1|Add5~0, Pong, 1
 instance = comp, \comb_3|b1|Add5~2 , comb_3|b1|Add5~2, Pong, 1
 instance = comp, \comb_3|b1|Add5~4 , comb_3|b1|Add5~4, Pong, 1
@@ -207,6 +400,7 @@ instance = comp, \comb_3|b1|Add5~12 , comb_3|b1|Add5~12, Pong, 1
 instance = comp, \comb_3|b1|Add5~14 , comb_3|b1|Add5~14, Pong, 1
 instance = comp, \comb_3|b1|Add5~16 , comb_3|b1|Add5~16, Pong, 1
 instance = comp, \comb_3|b1|Add5~18 , comb_3|b1|Add5~18, Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|b1|LessThan3~1 , comb_3|b1|LessThan3~1, Pong, 1
 instance = comp, \comb_3|b1|LessThan3~3 , comb_3|b1|LessThan3~3, Pong, 1
 instance = comp, \comb_3|b1|LessThan3~5 , comb_3|b1|LessThan3~5, Pong, 1
@@ -273,6 +467,18 @@ instance = comp, \comb_3|b1|LessThan1~13 , comb_3|b1|LessThan1~13, Pong, 1
 instance = comp, \comb_3|b1|LessThan1~15 , comb_3|b1|LessThan1~15, Pong, 1
 instance = comp, \comb_3|b1|LessThan1~17 , comb_3|b1|LessThan1~17, Pong, 1
 instance = comp, \comb_3|b1|LessThan1~18 , comb_3|b1|LessThan1~18, Pong, 1
+=======
+instance = comp, \comb_3|b1|LessThan7~1 , comb_3|b1|LessThan7~1, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~3 , comb_3|b1|LessThan7~3, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~5 , comb_3|b1|LessThan7~5, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~7 , comb_3|b1|LessThan7~7, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~9 , comb_3|b1|LessThan7~9, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~11 , comb_3|b1|LessThan7~11, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~13 , comb_3|b1|LessThan7~13, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~15 , comb_3|b1|LessThan7~15, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~17 , comb_3|b1|LessThan7~17, Pong, 1
+instance = comp, \comb_3|b1|LessThan7~18 , comb_3|b1|LessThan7~18, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|b1|intersect~0 , comb_3|b1|intersect~0, Pong, 1
 instance = comp, \comb_3|b1|intersect , comb_3|b1|intersect, Pong, 1
 instance = comp, \comb_3|vh1|disparea~0 , comb_3|vh1|disparea~0, Pong, 1
@@ -287,6 +493,7 @@ instance = comp, \comb_3|vga_r[2]~feeder , comb_3|vga_r[2]~feeder, Pong, 1
 instance = comp, \comb_3|vga_r[2] , comb_3|vga_r[2], Pong, 1
 instance = comp, \comb_3|vga_r[3]~feeder , comb_3|vga_r[3]~feeder, Pong, 1
 instance = comp, \comb_3|vga_r[3] , comb_3|vga_r[3], Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|p1|LessThan3~1 , comb_3|p1|LessThan3~1, Pong, 1
 instance = comp, \comb_3|p1|LessThan3~0 , comb_3|p1|LessThan3~0, Pong, 1
 instance = comp, \comb_3|p1|LessThan3~2 , comb_3|p1|LessThan3~2, Pong, 1
@@ -297,6 +504,15 @@ instance = comp, \comb_3|p1|intersect~2 , comb_3|p1|intersect~2, Pong, 1
 instance = comp, \comb_3|p1|intersect~3 , comb_3|p1|intersect~3, Pong, 1
 instance = comp, \comb_3|p1|intersect~4 , comb_3|p1|intersect~4, Pong, 1
 instance = comp, \comb_3|p1|intersect~5 , comb_3|p1|intersect~5, Pong, 1
+=======
+instance = comp, \comb_3|p1|intersect~1 , comb_3|p1|intersect~1, Pong, 1
+instance = comp, \comb_3|p1|intersect~2 , comb_3|p1|intersect~2, Pong, 1
+instance = comp, \comb_3|p1|intersect~0 , comb_3|p1|intersect~0, Pong, 1
+instance = comp, \comb_3|p1|intersect~3 , comb_3|p1|intersect~3, Pong, 1
+instance = comp, \comb_3|p1|intersect~4 , comb_3|p1|intersect~4, Pong, 1
+instance = comp, \comb_3|p1|intersect~5 , comb_3|p1|intersect~5, Pong, 1
+instance = comp, \comb_3|p1|intersect~6 , comb_3|p1|intersect~6, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|p1|intersect , comb_3|p1|intersect, Pong, 1
 instance = comp, \comb_3|vga_g~0 , comb_3|vga_g~0, Pong, 1
 instance = comp, \comb_3|vga_g[0]~feeder , comb_3|vga_g[0]~feeder, Pong, 1
@@ -307,8 +523,13 @@ instance = comp, \comb_3|vga_g[2]~feeder , comb_3|vga_g[2]~feeder, Pong, 1
 instance = comp, \comb_3|vga_g[2] , comb_3|vga_g[2], Pong, 1
 instance = comp, \comb_3|vga_g[3]~feeder , comb_3|vga_g[3]~feeder, Pong, 1
 instance = comp, \comb_3|vga_g[3] , comb_3|vga_g[3], Pong, 1
+<<<<<<< HEAD
 instance = comp, \comb_3|p2|intersect~0 , comb_3|p2|intersect~0, Pong, 1
 instance = comp, \comb_3|p2|intersect~1 , comb_3|p2|intersect~1, Pong, 1
+=======
+instance = comp, \comb_3|p2|intersect~1 , comb_3|p2|intersect~1, Pong, 1
+instance = comp, \comb_3|p2|intersect~0 , comb_3|p2|intersect~0, Pong, 1
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 instance = comp, \comb_3|p2|intersect~2 , comb_3|p2|intersect~2, Pong, 1
 instance = comp, \comb_3|p2|intersect , comb_3|p2|intersect, Pong, 1
 instance = comp, \comb_3|vga_b~0 , comb_3|vga_b~0, Pong, 1

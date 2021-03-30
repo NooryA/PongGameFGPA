@@ -167,6 +167,29 @@ vsync <= vga_V.DB_MAX_OUTPUT_PORT_TYPE
 
 |Pong|VGAController:comb_3|Ball:b1
 clk => intersect~reg0.CLK
+<<<<<<< HEAD
+=======
+clk => speedX[0].CLK
+clk => speedX[1].CLK
+clk => speedX[2].CLK
+clk => speedX[3].CLK
+clk => speedX[4].CLK
+clk => speedX[5].CLK
+clk => speedX[6].CLK
+clk => speedX[7].CLK
+clk => speedX[8].CLK
+clk => speedX[9].CLK
+clk => speedY[0].CLK
+clk => speedY[1].CLK
+clk => speedY[2].CLK
+clk => speedY[3].CLK
+clk => speedY[4].CLK
+clk => speedY[5].CLK
+clk => speedY[6].CLK
+clk => speedY[7].CLK
+clk => speedY[8].CLK
+clk => speedY[9].CLK
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 clk => y[0].CLK
 clk => y[1].CLK
 clk => y[2].CLK
@@ -212,6 +235,7 @@ clk => counter[21].CLK
 clk => counter[22].CLK
 clk => counter[23].CLK
 clk => counter[24].CLK
+<<<<<<< HEAD
 hsp[0] => LessThan1.IN20
 hsp[0] => LessThan2.IN20
 hsp[1] => LessThan1.IN19
@@ -252,6 +276,48 @@ vsp[8] => LessThan3.IN12
 vsp[8] => LessThan4.IN12
 vsp[9] => LessThan3.IN11
 vsp[9] => LessThan4.IN11
+=======
+hsp[0] => LessThan5.IN20
+hsp[0] => LessThan6.IN20
+hsp[1] => LessThan5.IN19
+hsp[1] => LessThan6.IN19
+hsp[2] => LessThan5.IN18
+hsp[2] => LessThan6.IN18
+hsp[3] => LessThan5.IN17
+hsp[3] => LessThan6.IN17
+hsp[4] => LessThan5.IN16
+hsp[4] => LessThan6.IN16
+hsp[5] => LessThan5.IN15
+hsp[5] => LessThan6.IN15
+hsp[6] => LessThan5.IN14
+hsp[6] => LessThan6.IN14
+hsp[7] => LessThan5.IN13
+hsp[7] => LessThan6.IN13
+hsp[8] => LessThan5.IN12
+hsp[8] => LessThan6.IN12
+hsp[9] => LessThan5.IN11
+hsp[9] => LessThan6.IN11
+vsp[0] => LessThan7.IN20
+vsp[0] => LessThan8.IN20
+vsp[1] => LessThan7.IN19
+vsp[1] => LessThan8.IN19
+vsp[2] => LessThan7.IN18
+vsp[2] => LessThan8.IN18
+vsp[3] => LessThan7.IN17
+vsp[3] => LessThan8.IN17
+vsp[4] => LessThan7.IN16
+vsp[4] => LessThan8.IN16
+vsp[5] => LessThan7.IN15
+vsp[5] => LessThan8.IN15
+vsp[6] => LessThan7.IN14
+vsp[6] => LessThan8.IN14
+vsp[7] => LessThan7.IN13
+vsp[7] => LessThan8.IN13
+vsp[8] => LessThan7.IN12
+vsp[8] => LessThan8.IN12
+vsp[9] => LessThan7.IN11
+vsp[9] => LessThan8.IN11
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 intersect <= intersect~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

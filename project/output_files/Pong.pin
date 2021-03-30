@@ -382,7 +382,11 @@ vs_out                       : N1        : output : 2.5 V             :         
 vga_b[3]                     : N2        : output : 2.5 V             :         : 2         : Y              
 hs_out                       : N3        : output : 2.5 V             :         : 2         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : N4        :        :                   :         : 2         :                
+<<<<<<< HEAD
 pb[1]                        : N5        : input  : 2.5 V             :         : 2         : N              
+=======
+RESERVED_INPUT_WITH_WEAK_PULLUP : N5        :        :                   :         : 2         :                
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 VCCIO2                       : N6        : power  :                   : 2.5V    : 2         :                
 VCCIO2                       : N7        : power  :                   : 2.5V    : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 2         :                
@@ -404,7 +408,11 @@ vga_b[0]                     : P1        : output : 2.5 V             :         
 GND                          : P2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 2         :                
 vga_b[2]                     : P4        : output : 2.5 V             :         : 2         : Y              
+<<<<<<< HEAD
 RESERVED_INPUT_WITH_WEAK_PULLUP : P5        :        :                   :         : 2         :                
+=======
+pb[1]                        : P5        : input  : 2.5 V             :         : 2         : N              
+>>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
 GND                          : P6        : gnd    :                   :         :           :                
 VCCIO2                       : P7        : power  :                   : 2.5V    : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 2         :                
