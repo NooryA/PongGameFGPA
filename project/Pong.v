@@ -17,7 +17,7 @@ vga_pll u1(
 
 
 //module VGAController(vga_clk, hs_out, vs_out, vga_r, vga_g, vga_r);
-VGAController(vga_clk,hs_out,vs_out,vga_r, vga_g, vga_b);
+VGAController(vga_clk,pb,hs_out,vs_out,vga_r, vga_g, vga_b);
 
 
 endmodule

@@ -1,0 +1,55 @@
+always_ff @(posedge clk)
+begin
+	if (pr_state != nx_state) t <= 0;
+	else if (t != T_deb) t <= t + 32'd1;
+end
+
+always_ff @(posedge clk)
+begin
+	pr_state <= nx_state;
+end
+
+always_comb
+case (pr_state)
+	A : begin
+		d_val <= 1'b0;
+		if (val == 1'b0)
+			nx_state <= B;
+		else
+			nx_state <= A;
+	end
+	B : begin
+		d_val <= 1'b0;
+
+		if (val == 1'b1)
+			nx_state <= A;
+		else if (val == 1'b0 && t >= T_deb - 32'd2)
+			nx_state <= C;
+		else
+			nx_state <= B;
+	end
+	C : begin
+		d_val <= 1'b1;
+
+		if (val == 1'b1)
+			nx_state <= D;
+		else
+			nx_state <= C;
+	end
+	D : begin
+		d_val <= 1'b1;
+
+		if (val == 1'b0)
+			nx_state <= C;
+		else if (val == 1'b1 && t >= T_deb - 32'd2)
+			nx_state <= A;
+		else
+			nx_state <= D;
+	end
+
+endcase
+//onebSSD ob1(d_val,ssd0);
+
+
+
+endmodule

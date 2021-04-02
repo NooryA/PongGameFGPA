@@ -1,6 +1,6 @@
-module VGAController(vga_clk, hs_out, vs_out, vga_r, vga_g, vga_b);
+module VGAController(vga_clk, pb, hs_out, vs_out, vga_r, vga_g, vga_b);
 input vga_clk;
-
+input [1:0] pb;
 wire [9:0] hsp, vsp;
 wire disparea;
 output hs_out, vs_out;
@@ -16,8 +16,8 @@ Ball b1(vga_clk, hsp, vsp,ball_intersect);
 
 //module Paddle(clk,x,pb0, pb1, vsp, hsp , intersect);
 
-Paddle p1(vga_clk, 10'd50,1'b0, 1'b0,vsp,hsp, p1_intersect);
-Paddle p2(vga_clk, 10'd590,1'b0, 1'b0,vsp,hsp, p2_intersect);
+Paddle p1(vga_clk, 10'd50,pb[0], pb[1],vsp,hsp, p1_intersect);
+Paddle p2(vga_clk, 10'd590,pb[0], pb[1],vsp,hsp, p2_intersect);
 
 always @(posedge vga_clk)
 begin	

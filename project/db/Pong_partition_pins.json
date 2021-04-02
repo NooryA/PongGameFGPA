@@ -58,6 +58,14 @@
 				{
 					"name" : "vga_b[3]",
 					"strict" : false
+				},
+				{
+					"name" : "pb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pb[1]",
+					"strict" : false
 				}
 			]
 		}
