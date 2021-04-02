@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Pong
-Thu Apr 01 23:26:44 2021
+Thu Apr 01 23:45:33 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,13 +62,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 01 23:26:44 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 01 23:45:33 2021       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Pong                                        ;
 ; Top-level Entity Name              ; Pong                                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 446                                         ;
-;     Total combinational functions  ; 437                                         ;
+; Total logic elements               ; 479                                         ;
+;     Total combinational functions  ; 470                                         ;
 ;     Dedicated logic registers      ; 168                                         ;
 ; Total registers                    ; 168                                         ;
 ; Total pins                         ; 17                                          ;
@@ -210,17 +210,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 446                                                                               ;
+; Estimated Total logic elements              ; 479                                                                               ;
 ;                                             ;                                                                                   ;
-; Total combinational functions               ; 437                                                                               ;
+; Total combinational functions               ; 470                                                                               ;
 ; Logic element usage by number of LUT inputs ;                                                                                   ;
-;     -- 4 input functions                    ; 104                                                                               ;
-;     -- 3 input functions                    ; 136                                                                               ;
-;     -- <=2 input functions                  ; 197                                                                               ;
+;     -- 4 input functions                    ; 95                                                                                ;
+;     -- 3 input functions                    ; 177                                                                               ;
+;     -- <=2 input functions                  ; 198                                                                               ;
 ;                                             ;                                                                                   ;
 ; Logic elements by mode                      ;                                                                                   ;
-;     -- normal mode                          ; 185                                                                               ;
-;     -- arithmetic mode                      ; 252                                                                               ;
+;     -- normal mode                          ; 182                                                                               ;
+;     -- arithmetic mode                      ; 288                                                                               ;
 ;                                             ;                                                                                   ;
 ; Total registers                             ; 168                                                                               ;
 ;     -- Dedicated logic registers            ; 168                                                                               ;
@@ -235,7 +235,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; vga_pll:u1|altpll:altpll_component|vga_pll_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 169                                                                               ;
-; Total fan-out                               ; 1767                                                                              ;
+; Total fan-out                               ; 1856                                                                              ;
 ; Average fan-out                             ; 2.76                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
@@ -245,13 +245,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                    ; Entity Name    ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------+--------------+
-; |Pong                                    ; 437 (0)             ; 168 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 17   ; 0            ; 0          ; |Pong                                                                  ; Pong           ; work         ;
-;    |VGAController:comb_3|                ; 437 (3)             ; 168 (12)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3                                             ; VGAController  ; work         ;
-;       |Ball:b1|                          ; 187 (187)           ; 49 (49)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Ball:b1                                     ; Ball           ; work         ;
-;       |Paddle:p1|                        ; 181 (57)            ; 83 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Paddle:p1                                   ; Paddle         ; work         ;
-;          |debouncer:db0|                 ; 62 (62)             ; 36 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Paddle:p1|debouncer:db0                     ; debouncer      ; work         ;
+; |Pong                                    ; 470 (0)             ; 168 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 17   ; 0            ; 0          ; |Pong                                                                  ; Pong           ; work         ;
+;    |VGAController:comb_3|                ; 470 (3)             ; 168 (12)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3                                             ; VGAController  ; work         ;
+;       |Ball:b1|                          ; 223 (223)           ; 49 (49)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Ball:b1                                     ; Ball           ; work         ;
+;       |Paddle:p1|                        ; 179 (56)            ; 83 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Paddle:p1                                   ; Paddle         ; work         ;
+;          |debouncer:db0|                 ; 61 (61)             ; 36 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Paddle:p1|debouncer:db0                     ; debouncer      ; work         ;
 ;          |debouncer:db1|                 ; 62 (62)             ; 36 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Paddle:p1|debouncer:db1                     ; debouncer      ; work         ;
-;       |Paddle:p2|                        ; 25 (25)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Paddle:p2                                   ; Paddle         ; work         ;
+;       |Paddle:p2|                        ; 24 (24)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|Paddle:p2                                   ; Paddle         ; work         ;
 ;       |VHSYNC:vh1|                       ; 41 (41)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|VGAController:comb_3|VHSYNC:vh1                                  ; VHSYNC         ; work         ;
 ;    |vga_pll:u1|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|vga_pll:u1                                                       ; vga_pll        ; work         ;
 ;       |altpll:altpll_component|          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Pong|vga_pll:u1|altpll:altpll_component                               ; altpll         ; work         ;
@@ -442,10 +442,10 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; VGAController:comb_3|Ball:b1|x[8]       ; 6       ;
 ; VGAController:comb_3|Ball:b1|x[6]       ; 8       ;
-; VGAController:comb_3|Ball:b1|y[7]       ; 7       ;
-; VGAController:comb_3|Ball:b1|y[6]       ; 6       ;
-; VGAController:comb_3|Ball:b1|y[5]       ; 6       ;
-; VGAController:comb_3|Ball:b1|y[4]       ; 5       ;
+; VGAController:comb_3|Ball:b1|y[7]       ; 9       ;
+; VGAController:comb_3|Ball:b1|y[6]       ; 9       ;
+; VGAController:comb_3|Ball:b1|y[5]       ; 9       ;
+; VGAController:comb_3|Ball:b1|y[4]       ; 8       ;
 ; VGAController:comb_3|Paddle:p1|y[7]     ; 3       ;
 ; VGAController:comb_3|Paddle:p1|y[6]     ; 3       ;
 ; VGAController:comb_3|Paddle:p1|y[5]     ; 3       ;
@@ -980,19 +980,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 64                          ;
 ;     SCLR              ; 25                          ;
 ;     plain             ; 37                          ;
-; cycloneiii_lcell_comb ; 439                         ;
-;     arith             ; 252                         ;
+; cycloneiii_lcell_comb ; 472                         ;
+;     arith             ; 288                         ;
 ;         2 data inputs ; 153                         ;
-;         3 data inputs ; 99                          ;
-;     normal            ; 187                         ;
+;         3 data inputs ; 135                         ;
+;     normal            ; 184                         ;
 ;         1 data inputs ; 17                          ;
-;         2 data inputs ; 29                          ;
-;         3 data inputs ; 37                          ;
-;         4 data inputs ; 104                         ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 42                          ;
+;         4 data inputs ; 95                          ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 3.98                        ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 4.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1011,7 +1011,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Apr 01 23:26:26 2021
+    Info: Processing started: Thu Apr 01 23:45:14 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pong -c Pong
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1023,7 +1023,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file pong.v
     Info (12023): Found entity 1: Pong File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Pong.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/vgacontroller.v
     Info (12023): Found entity 1: VGAController File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/output_files/VGAController.v Line: 1
-Warning (10463): Verilog HDL Declaration warning at Ball.v(10): "intersect" is SystemVerilog-2005 keyword File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 10
+Warning (10463): Verilog HDL Declaration warning at Ball.v(11): "intersect" is SystemVerilog-2005 keyword File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file ball.v
     Info (12023): Found entity 1: Ball File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 1
 Warning (10463): Verilog HDL Declaration warning at Paddle.v(17): "intersect" is SystemVerilog-2005 keyword File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Paddle.v Line: 17
@@ -1100,26 +1100,26 @@ Info (12128): Elaborating entity "VHSYNC" for hierarchy "VGAController:comb_3|VH
 Warning (10230): Verilog HDL assignment warning at VHSYNC.v(24): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/VHSYNC.v Line: 24
 Warning (10230): Verilog HDL assignment warning at VHSYNC.v(33): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/VHSYNC.v Line: 33
 Info (12128): Elaborating entity "Ball" for hierarchy "VGAController:comb_3|Ball:b1" File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/output_files/VGAController.v Line: 15
-Warning (10230): Verilog HDL assignment warning at Ball.v(26): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 26
-Warning (10230): Verilog HDL assignment warning at Ball.v(37): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 37
-Warning (10230): Verilog HDL assignment warning at Ball.v(51): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 51
-Warning (10230): Verilog HDL assignment warning at Ball.v(52): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 52
-Info (12128): Elaborating entity "Paddle" for hierarchy "VGAController:comb_3|Paddle:p1" File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/output_files/VGAController.v Line: 19
+Warning (10230): Verilog HDL assignment warning at Ball.v(28): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 28
+Warning (10230): Verilog HDL assignment warning at Ball.v(39): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 39
+Warning (10230): Verilog HDL assignment warning at Ball.v(53): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 53
+Warning (10230): Verilog HDL assignment warning at Ball.v(54): truncated value with size 32 to match size of target (10) File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Ball.v Line: 54
+Info (12128): Elaborating entity "Paddle" for hierarchy "VGAController:comb_3|Paddle:p1" File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/output_files/VGAController.v Line: 18
 Info (12128): Elaborating entity "debouncer" for hierarchy "VGAController:comb_3|Paddle:p1|debouncer:db0" File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Paddle.v Line: 12
 Warning (10036): Verilog HDL or VHDL warning at debouncer.sv(11): object "c2" assigned a value but never read File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/debouncer.sv Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 12 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 472 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 507 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 454 logic cells
+    Info (21061): Implemented 489 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4745 megabytes
-    Info: Processing ended: Thu Apr 01 23:26:44 2021
-    Info: Elapsed time: 00:00:18
+    Info: Peak virtual memory: 4743 megabytes
+    Info: Processing ended: Thu Apr 01 23:45:33 2021
+    Info: Elapsed time: 00:00:19
     Info: Total CPU time (on all processors): 00:00:22
 
 

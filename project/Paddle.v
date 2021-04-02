@@ -1,11 +1,11 @@
-module Paddle(clk,x,pb0, pb1, vsp, hsp , intersect);
+module Paddle(clk,x,pb0, pb1, vsp, hsp , intersect, y);
 input clk;
 input pb0; //to move up
 input pb1; // to move down
 input [9:0] hsp, vsp;
 input [9:0] x;
 
-reg [9:0] y = 10'd240; //paddle position
+output reg [9:0] y = 10'd240; //paddle position
 wire pb0_d, pb1_d;
 
 //module debouncer(clk,val, d_val);
@@ -33,8 +33,7 @@ begin
 		end
 	end
 
-
-
+	intersect <= (hsp >= x - 10'd5 && hsp < x + 10'd5) && (vsp >= y - 10'd50 && vsp < y + 10'd50);
 
 	//move paddle
 //	if(paddle_c == 1'b1)
@@ -50,7 +49,6 @@ begin
 //	else if (pb1_d == 1'b1 && paddle_c == speed && y !== 480 - 60 - 1)
 //		y <=y +1;	
 	
-	intersect <= (hsp >= x - 10'd5 && hsp < x + 10'd5) && (vsp >= y - 10'd50 && vsp < y + 10'd50);
 end
 
 

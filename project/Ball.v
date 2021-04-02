@@ -1,6 +1,7 @@
-module Ball(clk, hsp, vsp, intersect);
+module Ball(clk, hsp, vsp, p1_y,p2_y ,intersect);
 
 input clk;
+input [9:0] p1_y,p2_y;
 input [9:0] hsp, vsp;
 
 reg [9:0] x = 10'd320;
@@ -21,12 +22,13 @@ begin
 		x <= x + speedX;
 		y <= y + speedY;
 
-		if (x >= 580 && y >= 180 && y <= 280) // bounces off the paddle
-               begin
+		//right paddle
+		if (x >= 580 && y >= p1_y - 10'd50 && y <= p1_y + 10'd50) // bounces off the paddle
+			begin
             speedX <= -5;
-
-                end
-	else if (x<= 70 && y >= 180 && y <= 280) // bounces off the paddle
+         end
+		//left paddle
+		else if (x<= 70 && y >= p2_y - 10'd50 && y <= p2_y + 10'd50) // bounces off the paddle
 		begin
 				speedX <= 5;
 
