@@ -1,9 +1,13 @@
 Flow report for Pong
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Mar 25 23:49:16 2021
 =======
 Mon Mar 29 19:56:45 2021
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+Tue Mar 30 20:55:15 2021
+>>>>>>> origin/Noor
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -46,16 +50,21 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Flow Status                        ; Successful - Thu Mar 25 23:49:16 2021       ;
 =======
 ; Flow Status                        ; Successful - Mon Mar 29 19:56:45 2021       ;
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+; Flow Status                        ; Successful - Tue Mar 30 20:55:14 2021       ;
+>>>>>>> origin/Noor
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Pong                                        ;
 ; Top-level Entity Name              ; Pong                                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 ; Total logic elements               ; 210 / 49,760 ( < 1 % )                      ;
 ;     Total combinational functions  ; 198 / 49,760 ( < 1 % )                      ;
@@ -67,6 +76,12 @@ https://fpgasoftware.intel.com/eula.
 ;     Dedicated logic registers      ; 84 / 49,760 ( < 1 % )                       ;
 ; Total registers                    ; 84                                          ;
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+; Total logic elements               ; 257 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 245 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 86 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 86                                          ;
+>>>>>>> origin/Noor
 ; Total pins                         ; 17 / 360 ( 5 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -83,10 +98,14 @@ https://fpgasoftware.intel.com/eula.
 ; Option            ; Setting             ;
 +-------------------+---------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Start date & time ; 03/25/2021 23:48:27 ;
 =======
 ; Start date & time ; 03/29/2021 19:55:55 ;
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+; Start date & time ; 03/30/2021 20:54:40 ;
+>>>>>>> origin/Noor
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Pong                ;
 +-------------------+---------------------+
@@ -98,10 +117,14 @@ https://fpgasoftware.intel.com/eula.
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 45015789301798.161673050706092         ; --            ; --          ; --                                ;
 =======
 ; COMPILER_SIGNATURE_ID               ; 251457865308787.161706215503404        ; --            ; --          ; --                                ;
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+; COMPILER_SIGNATURE_ID               ; 251457865308787.161715207920900        ; --            ; --          ; --                                ;
+>>>>>>> origin/Noor
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -126,6 +149,7 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4726 MB             ; 00:00:22                           ;
 ; Fitter               ; 00:00:13     ; 1.0                     ; 5382 MB             ; 00:00:12                           ;
 ; Assembler            ; 00:00:05     ; 1.0                     ; 4683 MB             ; 00:00:04                           ;
@@ -140,6 +164,14 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4642 MB             ; 00:00:01                           ;
 ; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:00                           ;
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4735 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:09     ; 1.0                     ; 5382 MB             ; 00:00:12                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4690 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4797 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4642 MB             ; 00:00:01                           ;
+; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:47                           ;
+>>>>>>> origin/Noor
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

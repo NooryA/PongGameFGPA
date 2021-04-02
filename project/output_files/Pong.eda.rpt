@@ -1,9 +1,13 @@
 EDA Netlist Writer report for Pong
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Mar 25 23:49:16 2021
 =======
 Mon Mar 29 19:56:45 2021
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+Tue Mar 30 20:55:14 2021
+>>>>>>> origin/Noor
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -42,10 +46,14 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; EDA Netlist Writer Status ; Successful - Thu Mar 25 23:49:16 2021 ;
 =======
 ; EDA Netlist Writer Status ; Successful - Mon Mar 29 19:56:45 2021 ;
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+; EDA Netlist Writer Status ; Successful - Tue Mar 30 20:55:14 2021 ;
+>>>>>>> origin/Noor
 ; Revision Name             ; Pong                                  ;
 ; Top-level Entity Name     ; Pong                                  ;
 ; Family                    ; MAX 10                                ;
@@ -75,6 +83,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------+
 ; Simulation Generated Files                                                        ;
 +-----------------------------------------------------------------------------------+
@@ -91,6 +100,15 @@ https://fpgasoftware.intel.com/eula.
 ; C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/simulation/modelsim/Pong.vo ;
 +------------------------------------------------------------------------------------------------------+
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
++------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                         ;
++------------------------------------------------------------------------------------+
+; Generated Files                                                                    ;
++------------------------------------------------------------------------------------+
+; C:/Users/adam/Desktop/3216/Gittest#2/Pong-main/project/simulation/modelsim/Pong.vo ;
++------------------------------------------------------------------------------------+
+>>>>>>> origin/Noor
 
 
 +-----------------------------+
@@ -99,6 +117,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+<<<<<<< HEAD
 <<<<<<< HEAD
     Info: Processing started: Thu Mar 25 23:49:15 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Pong -c Pong
@@ -110,14 +129,22 @@ Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Elapsed time: 00:00:01
 =======
     Info: Processing started: Mon Mar 29 19:56:43 2021
+=======
+    Info: Processing started: Tue Mar 30 20:55:14 2021
+>>>>>>> origin/Noor
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Pong -c Pong
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Pong.vo in folder "C:/Users/adam/Desktop/3216/Master Branch Final project/Pong-main/project/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Pong.vo in folder "C:/Users/adam/Desktop/3216/Gittest#2/Pong-main/project/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4642 megabytes
+<<<<<<< HEAD
     Info: Processing ended: Mon Mar 29 19:56:45 2021
     Info: Elapsed time: 00:00:02
 >>>>>>> 4f36ea37594e5a135a8cedabfe0dde5b34e2a77a
+=======
+    Info: Processing ended: Tue Mar 30 20:55:15 2021
+    Info: Elapsed time: 00:00:01
+>>>>>>> origin/Noor
     Info: Total CPU time (on all processors): 00:00:01
 
 
