@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Apr 01 23:45:48 2021
+Fitter Status : Successful - Mon Apr 05 17:32:02 2021
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Pong
 Top-level Entity Name : Pong
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 483 / 49,760 ( < 1 % )
-    Total combinational functions : 471 / 49,760 ( < 1 % )
-    Dedicated logic registers : 168 / 49,760 ( < 1 % )
-Total registers : 168
-Total pins : 17 / 360 ( 5 % )
+Total logic elements : 659 / 49,760 ( 1 % )
+    Total combinational functions : 649 / 49,760 ( 1 % )
+    Dedicated logic registers : 280 / 49,760 ( < 1 % )
+Total registers : 280
+Total pins : 36 / 360 ( 10 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )

@@ -1,16 +1,17 @@
-module Paddle(clk,x,pb0, pb1, vsp, hsp , intersect, y);
-input clk;
+module Paddle(rst,clk,x,pb0, pb1, vsp, hsp , intersect, y);
+input clk,rst;
 input pb0; //to move up
 input pb1; // to move down
 input [9:0] hsp, vsp;
 input [9:0] x;
 
 output reg [9:0] y = 10'd240; //paddle position
-wire pb0_d, pb1_d;
+wire pb0_d, pb1_d, rst_d;
 
 //module debouncer(clk,val, d_val);
 debouncer db0(clk,pb0,pb0_d);
 debouncer db1(clk,pb1,pb1_d);
+debouncer db3(clk,rst,rst_d);
 
 wire paddle_c;
 parameter speed= 25'd1000; // speed of paddle
@@ -19,17 +20,20 @@ output reg intersect = 1'b0;
 assign paddle_c = pb0_d ^ pb1_d; // only 1 button can be pushed at once
 
 
-always @(posedge clk)
+always @(posedge clk, posedge rst_d)
 begin
-
-	if (paddle_c == 1'b1)
+	if (rst_d)
+	begin
+		y <= 10'd240;
+	end
+	else if (paddle_c == 1'b1)
 	begin
 		if (pb0_d == 1'b1)
-			y <= y - 10'd5;
+			y <= y - 10'd10;
 		else
 		begin
 			if (pb1_d == 1'b1)
-				y <= y + 10'd5;
+				y <= y + 10'd10;
 		end
 	end
 

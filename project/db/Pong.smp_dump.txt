@@ -1,4 +1,20 @@
 
+State Machine - |Pong|Score:sc1|pr_state
+Name pr_state.F pr_state.E pr_state.D pr_state.C pr_state.B pr_state.A 
+pr_state.A 0 0 0 0 0 0 
+pr_state.B 0 0 0 0 1 1 
+pr_state.C 0 0 0 1 0 1 
+pr_state.D 0 0 1 0 0 1 
+pr_state.E 0 1 0 0 0 1 
+pr_state.F 1 0 0 0 0 1 
+
+State Machine - |Pong|VGAController:comb_3|Paddle:p2|debouncer:db3|pr_state
+Name pr_state.D pr_state.C pr_state.B pr_state.A 
+pr_state.A 0 0 0 0 
+pr_state.B 0 0 1 1 
+pr_state.C 0 1 0 1 
+pr_state.D 1 0 0 1 
+
 State Machine - |Pong|VGAController:comb_3|Paddle:p2|debouncer:db1|pr_state
 Name pr_state.D pr_state.C pr_state.B pr_state.A 
 pr_state.A 0 0 0 0 
@@ -13,6 +29,13 @@ pr_state.B 0 0 1 1
 pr_state.C 0 1 0 1 
 pr_state.D 1 0 0 1 
 
+State Machine - |Pong|VGAController:comb_3|Paddle:p1|debouncer:db3|pr_state
+Name pr_state.D pr_state.C pr_state.B pr_state.A 
+pr_state.A 0 0 0 0 
+pr_state.B 0 0 1 1 
+pr_state.C 0 1 0 1 
+pr_state.D 1 0 0 1 
+
 State Machine - |Pong|VGAController:comb_3|Paddle:p1|debouncer:db1|pr_state
 Name pr_state.D pr_state.C pr_state.B pr_state.A 
 pr_state.A 0 0 0 0 
@@ -21,6 +44,13 @@ pr_state.C 0 1 0 1
 pr_state.D 1 0 0 1 
 
 State Machine - |Pong|VGAController:comb_3|Paddle:p1|debouncer:db0|pr_state
+Name pr_state.D pr_state.C pr_state.B pr_state.A 
+pr_state.A 0 0 0 0 
+pr_state.B 0 0 1 1 
+pr_state.C 0 1 0 1 
+pr_state.D 1 0 0 1 
+
+State Machine - |Pong|VGAController:comb_3|Ball:b1|debouncer:rs0|pr_state
 Name pr_state.D pr_state.C pr_state.B pr_state.A 
 pr_state.A 0 0 0 0 
 pr_state.B 0 0 1 1 

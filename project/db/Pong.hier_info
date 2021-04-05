@@ -1,21 +1,40 @@
 |Pong
-clk => clk.IN1
+clk => clk.IN2
 pb[0] => pb[0].IN1
 pb[1] => pb[1].IN1
-hs_out << VGAController:comb_3.port2
-vs_out << VGAController:comb_3.port3
-vga_r[0] << VGAController:comb_3.port4
-vga_r[1] << VGAController:comb_3.port4
-vga_r[2] << VGAController:comb_3.port4
-vga_r[3] << VGAController:comb_3.port4
-vga_g[0] << VGAController:comb_3.port5
-vga_g[1] << VGAController:comb_3.port5
-vga_g[2] << VGAController:comb_3.port5
-vga_g[3] << VGAController:comb_3.port5
-vga_b[0] << VGAController:comb_3.port6
-vga_b[1] << VGAController:comb_3.port6
-vga_b[2] << VGAController:comb_3.port6
-vga_b[3] << VGAController:comb_3.port6
+pb[2] => pb[2].IN1
+pb[3] => pb[3].IN1
+rst => rst.IN2
+hs_out <= VGAController:comb_3.port3
+vs_out <= VGAController:comb_3.port4
+vga_r[0] <= VGAController:comb_3.port5
+vga_r[1] <= VGAController:comb_3.port5
+vga_r[2] <= VGAController:comb_3.port5
+vga_r[3] <= VGAController:comb_3.port5
+vga_g[0] <= VGAController:comb_3.port6
+vga_g[1] <= VGAController:comb_3.port6
+vga_g[2] <= VGAController:comb_3.port6
+vga_g[3] <= VGAController:comb_3.port6
+vga_b[0] <= VGAController:comb_3.port7
+vga_b[1] <= VGAController:comb_3.port7
+vga_b[2] <= VGAController:comb_3.port7
+vga_b[3] <= VGAController:comb_3.port7
+ssd0[0] <= ssd_display:sd0.port1
+ssd0[1] <= ssd_display:sd0.port1
+ssd0[2] <= ssd_display:sd0.port1
+ssd0[3] <= ssd_display:sd0.port1
+ssd0[4] <= ssd_display:sd0.port1
+ssd0[5] <= ssd_display:sd0.port1
+ssd0[6] <= ssd_display:sd0.port1
+ssd0[7] <= ssd_display:sd0.port1
+ssd2[0] <= ssd_display:sd1.port1
+ssd2[1] <= ssd_display:sd1.port1
+ssd2[2] <= ssd_display:sd1.port1
+ssd2[3] <= ssd_display:sd1.port1
+ssd2[4] <= ssd_display:sd1.port1
+ssd2[5] <= ssd_display:sd1.port1
+ssd2[6] <= ssd_display:sd1.port1
+ssd2[7] <= ssd_display:sd1.port1
 
 
 |Pong|vga_pll:u1
@@ -100,8 +119,11 @@ locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 |Pong|VGAController:comb_3
 vga_clk => vga_clk.IN4
-pb[0] => pb[0].IN2
-pb[1] => pb[1].IN2
+pb[0] => pb[0].IN1
+pb[1] => pb[1].IN1
+pb[2] => pb[2].IN1
+pb[3] => pb[3].IN1
+rst => rst.IN3
 hs_out <= VHSYNC:vh1.port4
 vs_out <= VHSYNC:vh1.port5
 vga_r[0] <= vga_r[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -116,6 +138,8 @@ vga_b[0] <= vga_b[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vga_b[1] <= vga_b[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vga_b[2] <= vga_b[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vga_b[3] <= vga_b[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p1_win <= Ball:b1.port7
+p2_win <= Ball:b1.port8
 
 
 |Pong|VGAController:comb_3|VHSYNC:vh1
@@ -168,72 +192,8 @@ vsync <= vga_V.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Pong|VGAController:comb_3|Ball:b1
-clk => intersect~reg0.CLK
-clk => speedY[0].CLK
-clk => speedY[1].CLK
-clk => speedY[2].CLK
-clk => speedY[3].CLK
-clk => speedY[4].CLK
-clk => speedY[5].CLK
-clk => speedY[6].CLK
-clk => speedY[7].CLK
-clk => speedY[8].CLK
-clk => speedY[9].CLK
-clk => speedX[0].CLK
-clk => speedX[1].CLK
-clk => speedX[2].CLK
-clk => speedX[3].CLK
-clk => speedX[4].CLK
-clk => speedX[5].CLK
-clk => speedX[6].CLK
-clk => speedX[7].CLK
-clk => speedX[8].CLK
-clk => speedX[9].CLK
-clk => y[0].CLK
-clk => y[1].CLK
-clk => y[2].CLK
-clk => y[3].CLK
-clk => y[4].CLK
-clk => y[5].CLK
-clk => y[6].CLK
-clk => y[7].CLK
-clk => y[8].CLK
-clk => y[9].CLK
-clk => x[0].CLK
-clk => x[1].CLK
-clk => x[2].CLK
-clk => x[3].CLK
-clk => x[4].CLK
-clk => x[5].CLK
-clk => x[6].CLK
-clk => x[7].CLK
-clk => x[8].CLK
-clk => x[9].CLK
-clk => counter[0].CLK
-clk => counter[1].CLK
-clk => counter[2].CLK
-clk => counter[3].CLK
-clk => counter[4].CLK
-clk => counter[5].CLK
-clk => counter[6].CLK
-clk => counter[7].CLK
-clk => counter[8].CLK
-clk => counter[9].CLK
-clk => counter[10].CLK
-clk => counter[11].CLK
-clk => counter[12].CLK
-clk => counter[13].CLK
-clk => counter[14].CLK
-clk => counter[15].CLK
-clk => counter[16].CLK
-clk => counter[17].CLK
-clk => counter[18].CLK
-clk => counter[19].CLK
-clk => counter[20].CLK
-clk => counter[21].CLK
-clk => counter[22].CLK
-clk => counter[23].CLK
-clk => counter[24].CLK
+rst => rst.IN1
+clk => clk.IN1
 hsp[0] => LessThan11.IN20
 hsp[0] => LessThan12.IN20
 hsp[1] => LessThan11.IN19
@@ -314,11 +274,58 @@ p2_y[8] => Add5.IN11
 p2_y[8] => Add6.IN11
 p2_y[9] => Add5.IN10
 p2_y[9] => Add6.IN10
-intersect <= intersect~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intersect <= intersect.DB_MAX_OUTPUT_PORT_TYPE
+p1_win <= <GND>
+p2_win <= <GND>
+
+
+|Pong|VGAController:comb_3|Ball:b1|debouncer:rs0
+clk => t[0].CLK
+clk => t[1].CLK
+clk => t[2].CLK
+clk => t[3].CLK
+clk => t[4].CLK
+clk => t[5].CLK
+clk => t[6].CLK
+clk => t[7].CLK
+clk => t[8].CLK
+clk => t[9].CLK
+clk => t[10].CLK
+clk => t[11].CLK
+clk => t[12].CLK
+clk => t[13].CLK
+clk => t[14].CLK
+clk => t[15].CLK
+clk => t[16].CLK
+clk => t[17].CLK
+clk => t[18].CLK
+clk => t[19].CLK
+clk => t[20].CLK
+clk => t[21].CLK
+clk => t[22].CLK
+clk => t[23].CLK
+clk => t[24].CLK
+clk => t[25].CLK
+clk => t[26].CLK
+clk => t[27].CLK
+clk => t[28].CLK
+clk => t[29].CLK
+clk => t[30].CLK
+clk => t[31].CLK
+clk => pr_state~1.DATAIN
+val => nx_state.OUTPUTSELECT
+val => nx_state.OUTPUTSELECT
+val => always2.IN1
+val => Selector0.IN2
+val => Selector0.IN3
+val => Selector1.IN1
+val => always2.IN1
+d_val <= d_val.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Pong|VGAController:comb_3|Paddle:p1
-clk => clk.IN2
+rst => rst.IN1
+clk => clk.IN3
 x[0] => Add2.IN20
 x[0] => Add3.IN20
 x[1] => Add2.IN19
@@ -381,8 +388,8 @@ hsp[8] => LessThan0.IN12
 hsp[8] => LessThan1.IN12
 hsp[9] => LessThan0.IN11
 hsp[9] => LessThan1.IN11
-intersect <= intersect~reg0.DB_MAX_OUTPUT_PORT_TYPE
-y[0] <= y[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intersect <= intersect.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= <GND>
 y[1] <= y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 y[2] <= y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -482,8 +489,53 @@ val => always2.IN1
 d_val <= d_val.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|Pong|VGAController:comb_3|Paddle:p1|debouncer:db3
+clk => t[0].CLK
+clk => t[1].CLK
+clk => t[2].CLK
+clk => t[3].CLK
+clk => t[4].CLK
+clk => t[5].CLK
+clk => t[6].CLK
+clk => t[7].CLK
+clk => t[8].CLK
+clk => t[9].CLK
+clk => t[10].CLK
+clk => t[11].CLK
+clk => t[12].CLK
+clk => t[13].CLK
+clk => t[14].CLK
+clk => t[15].CLK
+clk => t[16].CLK
+clk => t[17].CLK
+clk => t[18].CLK
+clk => t[19].CLK
+clk => t[20].CLK
+clk => t[21].CLK
+clk => t[22].CLK
+clk => t[23].CLK
+clk => t[24].CLK
+clk => t[25].CLK
+clk => t[26].CLK
+clk => t[27].CLK
+clk => t[28].CLK
+clk => t[29].CLK
+clk => t[30].CLK
+clk => t[31].CLK
+clk => pr_state~1.DATAIN
+val => nx_state.OUTPUTSELECT
+val => nx_state.OUTPUTSELECT
+val => always2.IN1
+val => Selector0.IN2
+val => Selector0.IN3
+val => Selector1.IN1
+val => always2.IN1
+d_val <= d_val.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |Pong|VGAController:comb_3|Paddle:p2
-clk => clk.IN2
+rst => rst.IN1
+clk => clk.IN3
 x[0] => Add2.IN20
 x[0] => Add3.IN20
 x[1] => Add2.IN19
@@ -546,8 +598,8 @@ hsp[8] => LessThan0.IN12
 hsp[8] => LessThan1.IN12
 hsp[9] => LessThan0.IN11
 hsp[9] => LessThan1.IN11
-intersect <= intersect~reg0.DB_MAX_OUTPUT_PORT_TYPE
-y[0] <= y[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intersect <= intersect.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= <GND>
 y[1] <= y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 y[2] <= y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -645,5 +697,173 @@ val => Selector0.IN3
 val => Selector1.IN1
 val => always2.IN1
 d_val <= d_val.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pong|VGAController:comb_3|Paddle:p2|debouncer:db3
+clk => t[0].CLK
+clk => t[1].CLK
+clk => t[2].CLK
+clk => t[3].CLK
+clk => t[4].CLK
+clk => t[5].CLK
+clk => t[6].CLK
+clk => t[7].CLK
+clk => t[8].CLK
+clk => t[9].CLK
+clk => t[10].CLK
+clk => t[11].CLK
+clk => t[12].CLK
+clk => t[13].CLK
+clk => t[14].CLK
+clk => t[15].CLK
+clk => t[16].CLK
+clk => t[17].CLK
+clk => t[18].CLK
+clk => t[19].CLK
+clk => t[20].CLK
+clk => t[21].CLK
+clk => t[22].CLK
+clk => t[23].CLK
+clk => t[24].CLK
+clk => t[25].CLK
+clk => t[26].CLK
+clk => t[27].CLK
+clk => t[28].CLK
+clk => t[29].CLK
+clk => t[30].CLK
+clk => t[31].CLK
+clk => pr_state~1.DATAIN
+val => nx_state.OUTPUTSELECT
+val => nx_state.OUTPUTSELECT
+val => always2.IN1
+val => Selector0.IN2
+val => Selector0.IN3
+val => Selector1.IN1
+val => always2.IN1
+d_val <= d_val.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pong|Score:sc1
+clk => p1_score_reg[0].CLK
+clk => p1_score_reg[1].CLK
+clk => p1_score_reg[2].CLK
+clk => p1_score_reg[3].CLK
+clk => pr_state~1.DATAIN
+rst => p1_score_reg[0].ACLR
+rst => p1_score_reg[1].ACLR
+rst => p1_score_reg[2].ACLR
+rst => p1_score_reg[3].ACLR
+rst => pr_state~3.DATAIN
+p1_win => nx_state.OUTPUTSELECT
+p1_win => nx_state.OUTPUTSELECT
+p1_win => Selector0.IN2
+p1_win => always2.IN0
+p2_win => nx_state.DATAA
+p2_win => nx_state.DATAA
+p2_win => always2.IN1
+p1_score[0] <= p1_score.DB_MAX_OUTPUT_PORT_TYPE
+p1_score[1] <= p1_score.DB_MAX_OUTPUT_PORT_TYPE
+p1_score[2] <= p1_score.DB_MAX_OUTPUT_PORT_TYPE
+p1_score[3] <= p1_score.DB_MAX_OUTPUT_PORT_TYPE
+p2_score[0] <= p2_score.DB_MAX_OUTPUT_PORT_TYPE
+p2_score[1] <= p2_score.DB_MAX_OUTPUT_PORT_TYPE
+p2_score[2] <= p2_score.DB_MAX_OUTPUT_PORT_TYPE
+p2_score[3] <= p2_score.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pong|ssd_display:sd0
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[1] => e.IN0
+in[1] => e.IN0
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[2] => e.IN1
+in[2] => e.IN0
+in[2] => e.IN0
+in[2] => e.IN0
+in[2] => e.IN0
+in[3] => e.IN1
+in[3] => e.IN1
+in[3] => e.IN1
+in[3] => e.IN1
+in[3] => e.IN1
+e[0] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[1] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[2] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[3] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[5] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[6] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[7] <= dot.DB_MAX_OUTPUT_PORT_TYPE
+dot => e[7].DATAIN
+
+
+|Pong|ssd_display:sd1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[0] => e.IN1
+in[1] => e.IN0
+in[1] => e.IN0
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[1] => e.IN1
+in[2] => e.IN1
+in[2] => e.IN0
+in[2] => e.IN0
+in[2] => e.IN0
+in[2] => e.IN0
+in[3] => e.IN1
+in[3] => e.IN1
+in[3] => e.IN1
+in[3] => e.IN1
+in[3] => e.IN1
+e[0] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[1] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[2] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[3] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[5] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[6] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[7] <= dot.DB_MAX_OUTPUT_PORT_TYPE
+dot => e[7].DATAIN
 
 
