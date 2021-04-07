@@ -1,5 +1,5 @@
-module Paddle(rst,clk,x,pb0, pb1, vsp, hsp , intersect, y);
-input clk,rst;
+module Paddle(rst,clk, either_win,x,pb0, pb1, vsp, hsp , intersect, y);
+input clk,rst, either_win;
 input pb0; //to move up
 input pb1; // to move down
 input [9:0] hsp, vsp;
@@ -26,14 +26,18 @@ begin
 	begin
 		y <= 10'd240;
 	end
+	else if (either_win)
+	begin
+		y <= 10'd240;
+	end
 	else if (paddle_c == 1'b1)
 	begin
 		if (pb0_d == 1'b1)
-			y <= y - 10'd10;
+			y <= y - 10'd15;
 		else
 		begin
 			if (pb1_d == 1'b1)
-				y <= y + 10'd10;
+				y <= y + 10'd15;
 		end
 	end
 

@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at Ball.v(15): always construct contains both blocking and non-blocking assignments File: C:/Users/adam/Desktop/3216/Gittest#2/Pong-main/project/Ball.v Line: 15
+Warning (10268): Verilog HDL information at Score.sv(15): always construct contains both blocking and non-blocking assignments File: C:/Users/Vinny/Desktop/eecs3216/final_project/project/Score.sv Line: 15
